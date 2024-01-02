@@ -1,0 +1,44 @@
+{
+  "name": "animated-scrollview",
+  "version": "1.0.0",
+  "description": "A react native scrollview that let's u easily animate its children based on the scrolling position, to achieve classical one-pager animations etc.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "keywords": [
+    "react native",
+    "react native web",
+    "animation",
+    "scrollview",
+    "slide in",
+    "slide out",
+    "landing page"
+  ],
+  "scripts": {
+    "clear-build-folder": "rm -rf ./build",
+    "transpile": "tsc",
+    "fix-paths": "tsc-alias",
+    "build": "yarn clear-build-folder && yarn transpile && yarn fix-paths",
+    "dev": "yarn nodemon"
+  },
+  "files": [
+    "build"
+  ],
+  "repository": "git@github.com:maks-io/animated-scrollview.git",
+  "author": "Markus Kurzmann <markus@kurzmann.io>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.73.1",
+    "react-native-reanimated": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "~18.2.46",
+    "@types/react-native": "~0.73.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1",
+    "tsc": "^2.0.4",
+    "tsc-alias": "^1.8.8",
+    "typescript": "^5.3.3"
+  }
+}
