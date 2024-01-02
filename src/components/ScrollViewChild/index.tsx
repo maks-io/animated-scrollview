@@ -181,9 +181,6 @@ export const ScrollViewChild = ({
           zIndex: child.props?.style?.zIndex ?? undefined,
           width: child.props?.style?.width ?? undefined,
           height: child.props?.style?.height ?? undefined,
-          borderColor: "gold",
-          borderWidth: 3,
-          borderStyle: "solid",
         },
         animatedStyle,
       ]}

@@ -10,7 +10,7 @@ FOLLOWING SOON
 
 ## Playground / Expo Snack
 
-FOLLOWING SOON
+https://snack.expo.dev/@maks-io/animated-scrollview-demo
 
 ## Example Repository
 
