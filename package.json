@@ -1,6 +1,6 @@
 {
   "name": "animated-scrollview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react native scrollview that let's u easily animate its children based on the scrolling position, to achieve classical one-pager animations etc.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -27,16 +27,16 @@
   "author": "Markus Kurzmann <markus@kurzmann.io>",
   "license": "MIT",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "^0.73.1",
-    "react-native-reanimated": "^3.6.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-reanimated": "~3.7.0"
   },
   "devDependencies": {
-    "@types/react": "~18.2.46",
+    "@types/react": "~18.2.56",
     "@types/react-native": "~0.73.0",
-    "nodemon": "^3.0.2",
-    "prettier": "^3.1.1",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5",
     "tsc": "^2.0.4",
     "tsc-alias": "^1.8.8",
     "typescript": "^5.3.3"
