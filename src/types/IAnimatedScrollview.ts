@@ -1,11 +1,9 @@
 import { ReactElement } from "react";
-import { IConfigWithoutMeasurements } from "$/types/IConfigWithoutMeasurements";
 import { ViewStyle } from "react-native";
+import { IConfig } from "$/types/IConfig";
 
 export interface IAnimatedScrollview {
-  children: ReactElement[];
-  config: {
-    [key: string]: IConfigWithoutMeasurements;
-  };
+  children: ReactElement | ReactElement[];
+  config: IConfig;
   style?: ViewStyle;
 }
