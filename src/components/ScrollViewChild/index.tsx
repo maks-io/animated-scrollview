@@ -62,7 +62,10 @@ export const ScrollViewChild = ({
 
   // @ts-ignore TODO
   const animatedStyle = useAnimatedStyle(() => {
-    if (!(config as IConfigWithMeasurements)?.top || !parentHeight) {
+    if (
+      (config as IConfigWithMeasurements)?.top === undefined ||
+      !parentHeight
+    ) {
       return {};
     }
 
@@ -123,6 +126,9 @@ export const ScrollViewChild = ({
       layout: { x, y, width, height },
     },
   }: LayoutChangeEvent) => {
+    if ((config as IConfigWithMeasurements)?.top !== undefined) {
+      return;
+    }
     setConfig((prevState) => {
       const newState: IConfigComplete = !prevState
         ? ({} as IConfigComplete)

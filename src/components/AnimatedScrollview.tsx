@@ -31,7 +31,7 @@ export const AnimatedScrollview = ({
         setHeight(height);
       }}
     >
-      {!children
+      {!children || !height
         ? null
         : (!Array.isArray(children) ? [children] : children).map((child) => {
             return (
