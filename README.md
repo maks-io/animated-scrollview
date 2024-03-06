@@ -2,11 +2,12 @@
 
 [![Version](https://img.shields.io/npm/v/animated-scrollview)](https://www.npmjs.com/package/animated-scrollview)
 
-A react native scrollview that let's u easily animate its children based on the scrolling position, to achieve classical one-pager animations etc.
+A react native scrollview that lets you easily animate its children based on the scrolling position, to achieve classical one-pager animations etc.
 
 ## Demo
 
-FOLLOWING SOON
+<a href="https://youtube.com/shorts/n11xdR605l0?feature=share"><img src="documentation/asv-ios.gif" height="480px" alt="demo-ios"></a>
+<a href="https://youtube.com/shorts/KOBtjLTFI68?feature=share"><img src="documentation/asv-android.gif" height="480px" alt="demo-android"></a>
 
 ## Playground / Expo Snack
 
@@ -14,7 +15,7 @@ https://snack.expo.dev/@maks-io/animated-scrollview-demo
 
 ## Example Repository
 
-FOLLOWING SOON
+https://github.com/maks-io/animated-scrollview-example-usage
 
 ## Installation
 
@@ -80,8 +81,8 @@ Every child that you want to animate needs to have an entry in the `config` prop
 The following is a list of things you can configure on a per-child basis:
 
 | prop                       | type                                                                         | required | default value                               | description                                                                                                                                                                                                                                                                                                                                                                                        |     |
-| -------------------------- | ---------------------------------------------------------------------------- | -------- | ------------------------------------------- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| --- |
-| `fixate`                   | boolean                                                                      | no       | false                                       | Setting this to `true` would not allow the child the animate "back out" anymore - like in this demo for instance (LINK FOLLOWING SOON)                                                                                                                                                                                                                                                                           |     |
+| -------------------------- | ---------------------------------------------------------------------------- | -------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| `fixate`                   | boolean                                                                      | no       | false                                       | Setting this to `true` would not allow the child the animate "back out" anymore - like in this demo for instance (LINK FOLLOWING SOON)                                                                                                                                                                                                                                                             |     |
 | `relativeOffsetFromBottom` | number                                                                       | no       | 0                                           | This is a percentage value (0 to 100) for offsetting where the animation of this child should start to trigger. By default this is set to `0`, meaning, as soon as the child appears on the bottom of the Scrollview's visible area, it will start animating in. Setting this to `50` would mean that the animation would start when the child reaches the vertical center of the Scrollview, etc. |     |
 | `springConfig`             | See description                                                              | no       | `{ mass: 1, damping: 100, stiffness: 500 }` | This is the configuration for the spring animation for this child. Available settings can be found [in the react-native-reanimated documentation](https://docs.swmansion.com/react-native-reanimated/docs/animations/withSpring), which is the underlying animation library that the `animated-scrollview` library uses.                                                                           |     |
 | `animation`                | (This prop has multiple sub props, check the following props for more info.) | yes      | `{}`                                        | (Check the description of the following props, which are sub props of the `animation` prop.)                                                                                                                                                                                                                                                                                                       |     |
