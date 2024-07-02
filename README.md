@@ -145,7 +145,6 @@ Note that this works only for 2 levels, meaning children and grandchildren.
 
 ## Open Tasks
 
-- add missing elements in README
 - improve TypeScript usage, there are still 2 remaining `@ts-ignore` annotations
 
 ## Improvements / Ideas
@@ -153,3 +152,7 @@ Note that this works only for 2 levels, meaning children and grandchildren.
 - support more CSS transform properties, currently only `translateX`, `translateY`, `scale` and `rotate` are supported
 - Allow generic / global `config`, so that not every child has to define its own config, as now is the case. Rather it should be possible to override configs for individual children, if desired.
 - Same goes for the sub prop `springConfig`. It should be possible to set it globally but also override it for individual cases, to get more flexibility.
+
+## If you enjoy using this...
+
+<a href="https://www.buymeacoffee.com/maks_io" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 48px !important;" ></a>
