@@ -27,18 +27,19 @@
   "author": "Markus Kurzmann <markus@kurzmann.io>",
   "license": "MIT",
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.73.4",
-    "react-native-reanimated": "~3.6.2"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-native": "0.74.3",
+    "react-native-reanimated": "~3.12.1"
   },
   "devDependencies": {
-    "@types/react": "~18.2.63",
+    "@types/react": "~18.3.3",
     "@types/react-native": "~0.73.0",
-    "nodemon": "^3.1.0",
-    "prettier": "^3.2.5",
+    "expo": "^51.0.17",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2",
     "tsc": "^2.0.4",
-    "tsc-alias": "^1.8.8",
-    "typescript": "^5.3.3"
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.5.3"
   }
 }
