@@ -1,6 +1,6 @@
 {
   "name": "animated-scrollview",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "A react native scrollview that lets you easily animate its children based on the scrolling position, to achieve classical one-pager animations etc.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -29,8 +29,7 @@
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-native": "0.74.3",
-    "react-native-reanimated": "~3.12.1"
+    "react-native": "0.74.3"
   },
   "devDependencies": {
     "@types/react": "~18.3.3",
@@ -38,8 +37,12 @@
     "expo": "^51.0.17",
     "nodemon": "^3.1.4",
     "prettier": "^3.3.2",
+    "react-native-reanimated": "~3.10.1",
     "tsc": "^2.0.4",
     "tsc-alias": "^1.8.10",
     "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "react-native-reanimated": "3.x"
   }
 }

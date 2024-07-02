@@ -22,20 +22,22 @@ https://github.com/maks-io/animated-scrollview-example-usage
 If you use expo, use:
 
 ```bash
-expo install animated-scrollview
+expo install animated-scrollview react-native-reanimated
 ```
 
 Otherwise, for npm use:
 
 ```bash
-npm i animated-scrollview --save
+npm i animated-scrollview react-native-reanimated --save
 ```
 
 And for yarn use:
 
 ```bash
-yarn add animated-scrollview
+yarn add animated-scrollview react-native-reanimated
 ```
+
+Note that `react-native-reanimated` is a peer dependency and needs to be installed additionally - as shown above.
 
 ## Usage
 
