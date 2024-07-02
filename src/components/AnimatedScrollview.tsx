@@ -1,9 +1,6 @@
 import React, { ReactElement, useState } from "react";
 import { IAnimatedScrollview } from "$/types/IAnimatedScrollview";
-import Animated, {
-  useAnimatedRef,
-  useSharedValue,
-} from "react-native-reanimated";
+import Animated, { useSharedValue } from "react-native-reanimated";
 import { ScrollViewChild } from "$/components/ScrollViewChild";
 
 export const AnimatedScrollview = ({
@@ -11,13 +8,11 @@ export const AnimatedScrollview = ({
   config,
   style = {},
 }: IAnimatedScrollview): ReactElement => {
-  const [height, setHeight] = useState<number>();
-  const aref = useAnimatedRef<Animated.ScrollView>();
   const scrollOffset = useSharedValue(0);
+  const [height, setHeight] = useState<number>();
 
   return (
     <Animated.ScrollView
-      ref={aref}
       scrollEventThrottle={16}
       onScroll={(event) => {
         scrollOffset.value = event.nativeEvent.contentOffset.y;
