@@ -4,6 +4,8 @@
 
 A react native scrollview that lets you easily animate its children based on the scrolling position, to achieve classical one-pager animations etc.
 
+For Android, iOS and web.
+
 ## Demo
 
 <a href="https://youtube.com/shorts/n11xdR605l0?feature=share"><img src="documentation/asv-ios.gif" height="480px" alt="demo-ios"></a>
